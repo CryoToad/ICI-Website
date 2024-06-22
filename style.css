@@ -39,6 +39,7 @@ nav ul li a {
     align-items: center;
     color: #fff;
     text-align: center;
+    position: relative;
 }
 
 .hero-text {
@@ -56,18 +57,60 @@ nav ul li a {
     font-size: 1.5em;
 }
 
+.hero .btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
 main {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-section {
+.intro, .features, .join {
     margin-bottom: 40px;
 }
 
-h2 {
-    color: #2c3e50;
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1;
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.feature h3 {
+    margin-top: 10px;
+}
+
+.join .btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: inline-block;
 }
 
 footer {
@@ -80,27 +123,8 @@ footer {
     width: 100%;
 }
 
-.content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.content div {
-    flex: 1;
-    margin: 10px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.content div h3 {
-    margin-top: 0;
-}
-
 @media (max-width: 768px) {
-    .content {
+    .features {
         flex-direction: column;
     }
 
